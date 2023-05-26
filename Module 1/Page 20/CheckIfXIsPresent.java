@@ -14,6 +14,8 @@ public class CheckIfXIsPresent {
 
         int testCase = sc.nextInt();
 
+        Arrays.sort(arr);
+
         int flag = 0;
         int high = n - 1;
         int low = 0;
@@ -24,7 +26,7 @@ public class CheckIfXIsPresent {
             if (arr[mid] == testCase) {
                 flag = 1;
                 break;
-            } else if (arr[mid] > testCase)
+            } else if (arr[mid] < testCase)
                 low = mid + 1;
             else
                 high = mid - 1;
