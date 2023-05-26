@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class HW_CalculateLCM {
+public class FindGCD {
 
-    static int HCF(int x, int y) {
-        int hcf = 1;
+    static int GCD(int x, int y) {
+        int gcd = 1;
         int small, big;
 
         big = Math.max(x, y);
@@ -15,23 +15,20 @@ public class HW_CalculateLCM {
             }
         }
 
-        return hcf;
-    }
-
-    static int LCM(int x, int y) {
-        return (x * y) / HCF(x, y);
+        return gcd;
     }
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         int T = sc.nextInt();
         int x, y;
 
         while (T-- > 0) {
             x = sc.nextInt();
             y = sc.nextInt();
-            System.out.println(LCM(x, y));
+            System.out.println(GCD(x, y));
         }
 
     }
