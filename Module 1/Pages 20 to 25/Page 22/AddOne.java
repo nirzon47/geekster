@@ -22,8 +22,7 @@ public class AddOne {
         }
 
         if (arr[0] == 0) {
-            arr = new int[n + 1];
-            arr[0] = 1;
+            System.out.print(1 + " ");
         }
 
 
