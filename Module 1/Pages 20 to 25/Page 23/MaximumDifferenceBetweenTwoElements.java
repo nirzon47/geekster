@@ -15,10 +15,8 @@ public class MaximumDifferenceBetweenTwoElements {
         int minElement = arr[0];
 
         for (int i = 1; i < n; i++) {
-            if (arr[i] - minElement > maxDifference)
-                maxDifference = arr[i] - minElement;
-            if (arr[i] < minElement)
-                minElement = arr[i];
+            maxDifference = Math.max(arr[i] - minElement, maxDifference);
+            minElement = Math.min(arr[i], minElement);
         }
         System.out.println(maxDifference);
 
