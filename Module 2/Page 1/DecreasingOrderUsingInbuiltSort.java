@@ -7,16 +7,15 @@ public class DecreasingOrderUsingInbuiltSort {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        int[] nums = new int[N];
+        Integer[] nums = new Integer[N];
 
         for (int i = 0; i < N; i++) {
             nums[i] = sc.nextInt();
         }
 
-        Arrays.sort(nums);
+        Arrays.sort(nums, Collections.reverseOrder());
 
-        for (int i = N - 1; i >= 0; i--) {
-            System.out.print(nums[i] + " ");
-        }
+        for (Integer num : nums) System.out.print(num + " ");
+        
     }
 }
