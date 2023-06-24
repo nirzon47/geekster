@@ -20,7 +20,7 @@ public class HW_ZeroBringsZero {
             }
             if (nums[left] == 0) {
                 if (right - 1 < n) {
-                    nums[right - 1] = nums[left];
+                    nums[right - 1] = 0;
                 }
                 numZeros--;
             }
