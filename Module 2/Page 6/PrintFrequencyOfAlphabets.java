@@ -7,20 +7,18 @@ public class PrintFrequencyOfAlphabets {
         String s = sc.nextLine();
 
         char[] chars = s.toCharArray();
-
-        HashMap<Character, Integer> freq = new HashMap<>();
-
-        for (char aChar : chars) {
-            freq.put(aChar, freq.getOrDefault(aChar, 0) + 1);
-        }
-
-        HashSet<Character> alreadyPrinted = new HashSet<>();
+        int[] freq = new int['z' + 1];
 
         for (char ch : chars) {
-            if (!alreadyPrinted.contains(ch)) {
-                System.out.println(ch + "-" + freq.get(ch));
+            freq[ch]++;
+        }
+
+
+        for (char ch : chars) {
+            if (freq[ch] != 0) {
+                System.out.println(ch + "-" + freq[ch]);
             }
-            alreadyPrinted.add(ch);
+            freq[ch] = 0;
         }
 
     }

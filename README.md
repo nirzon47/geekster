@@ -16,3 +16,4 @@
 #### Module 2
 
 - [Contest 1](https://www.hackerrank.com/contests/fs-13-m2-contest-01-geekster/challenges)
+- [Contest 2](https://www.hackerrank.com/contests/fs-13-m2-contest-02-geekster/challenges)
