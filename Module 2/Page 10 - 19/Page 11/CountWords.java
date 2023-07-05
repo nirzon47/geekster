@@ -25,5 +25,13 @@ public class CountWords {
 
         System.out.println(count);
 
+        /*
+         *
+         * String[] words = s.split(" +");
+         * System.out.println(words.length);
+         * solution using regex and split()
+         * 
+         */
+
     }
 }
