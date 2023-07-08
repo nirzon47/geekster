@@ -21,5 +21,9 @@ public class LocateTheString {
             System.out.println(-1);
         }
 
+        /*
+         * System.out.println(s.indexOf(t));
+         */
+
     }
 }

@@ -19,5 +19,8 @@ public class FindDistanceBWTwoCharacters {
         }
 
         System.out.println(second - first - 1);
+
+        // Using indexOf function 
+        //System.out.println(Math.abs(s.indexOf(c2) - s.indexOf(c1)) - 1);
     }
 }
