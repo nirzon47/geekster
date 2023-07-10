@@ -2,9 +2,9 @@
 
 ## Solutions or projects that don't need a whole repository are here.
 
-### Questions at [HackerRank Module 1](https://www.hackerrank.com/contests/fs-13-java-dsa-class-challenges/challenges)
+### [Module 1 Questions](https://www.hackerrank.com/contests/fs-13-java-dsa-class-challenges/challenges)
 
-### Questions at [HackerRank Module 2](https://www.hackerrank.com/contests/fs-13-m2-java-dsa-class-challenges/challenges/)
+### [Module 2 Questions](https://www.hackerrank.com/contests/fs-13-m2-java-dsa-class-challenges/challenges/)
 
 ### Contest Links at
 
