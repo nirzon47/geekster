@@ -1,19 +1,17 @@
 import java.util.*;
 
 public class SearchCharacter {
-    public static int findCharacter(char[] chars, int n, int check) {
-        int left = 0, right = n - 1, res = -1;
+    public static char findCharacter(char[] letters, int target) {
+        char res = letters[0];
+        int left = 0, right = letters.length - 1;
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
-
-            if (chars[mid] < check) {
+            if (letters[mid] <= target) {
                 left = mid + 1;
-            } else if (chars[mid] > check) {
-                right = mid - 1;
             } else {
-                res = mid;
-                left = mid + 1;
+                res = letters[mid];
+                right = mid - 1;
             }
         }
 
@@ -30,23 +28,11 @@ public class SearchCharacter {
             chars[i] = sc.next().charAt(0);
         }
 
-        int position = findCharacter(chars, n, check);
-
-        if (position == -1) {
-            for (int i = 0; i < n; i++) {
-                if (chars[i] > check) {
-                    System.out.println(chars[i]);
-                    return;
-                }
-            }
-            System.out.println(-1);
-            return;
-        }
-
-        if (position + 1 == n) {
+        char res = findCharacter(chars, check);
+        if (check > chars[n - 1]) {
             System.out.println(-1);
         } else {
-            System.out.println(chars[position + 1]);
+            System.out.println(res);
         }
 
     }
