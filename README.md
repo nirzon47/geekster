@@ -23,3 +23,4 @@
 - [Contest 4](https://www.hackerrank.com/contests/fs-13-contest-05-geekster/challenges)
 - [Contest 5](https://www.hackerrank.com/contests/fs-13-m2-contest-05-geekster/challenges)
 - [Contest 6](https://www.hackerrank.com/contests/fs-13-m2-contest-06-geekster/challenges)
+- [Contest 7](https://www.hackerrank.com/contests/fs-13-m2-contest-07-geekster/challenges)
